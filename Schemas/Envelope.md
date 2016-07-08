@@ -18,6 +18,10 @@ System variables for a telemetry item (Part A)
 
     The UTC time the telemetry item was created. ISO 8601 zero offset date-time string. Example: 2009-06-15T13:45:30.0000000Z
     
+    Time offset in the past from the current time: -48 hours
+    
+    Time offset in the future from the current time: +2 hours
+    
 1. **sampleRate** : double
 
     Sampling rate used in application. This telemetry item represents 1 / sampleRate actual telemetry item.
