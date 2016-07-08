@@ -1,6 +1,7 @@
 
 #AI.ExceptionData
 Instance of Exception represents handled or unhandled exception that occurred during execution of the monitored application.
+
 1. **ver** : int
 
     Schema version

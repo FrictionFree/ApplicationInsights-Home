@@ -1,6 +1,7 @@
 
 #AI.PageViewData
 Instance of PageView represents a generic action on a page like a button click. It is also the base type for PageView.
+
 1. **ver** : int
 
     Schema version

@@ -1,6 +1,7 @@
 
 #AI.RequestData
 Instance of Request represents completion of an external request to the application to do work, and contains a summary of that request execution and the results.
+
 1. **ver** : int
 
     Schema version

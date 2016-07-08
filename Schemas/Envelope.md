@@ -1,6 +1,7 @@
 
 #Microsoft.Telemetry.Envelope
 System variables for a telemetry item (Part A)
+
 1. **ver** : int
 
     Default value: 1

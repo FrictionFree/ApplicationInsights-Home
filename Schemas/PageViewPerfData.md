@@ -1,6 +1,7 @@
 
 #AI.PageViewPerfData
 Instance of PageView represents: page view with no performance data, page view with performance data, just the performance data of an earlier page request
+
 1. **ver** : int
 
     Schema version
