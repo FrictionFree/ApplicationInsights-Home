@@ -1,59 +1,70 @@
 
 #AI.AvailabilityData
-## ver: int
-Schema version
+1. **ver** : int
 
-Default value: 2
-
-## testRunId: string
-**Question**: This is a new limit. Verify it's ok
-
-Max length: 64
-
-## testTimeStamp: string
-## testName: string
-**Question**: This is a new limit. Verify it's ok
-
-Max length: 1024
-
-## duration: string
-Duration in TimeSpan 'G' (general long) format: d:hh:mm:ss.fffffff
-
-## result: test.TestResult
-[TestResult] "Instances of AvailabilityData represent the result of executing an availability test"
-    - Pass = 0
-    - Fail = 1
+    Schema version
     
-## runLocation: string
-**Question**: This is a new limit. Verify it's ok
+    Default value: 2
+    
+1. **testRunId** : string
 
-Max length: 1024
+    **Question**: This is a new limit. Verify it's ok
+    
+    Max length: 64
+    
+1. **testTimeStamp** : string
 
-This field is optional.
+1. **testName** : string
 
-## message: string
-**Question**: This is a new limit. Verify it's ok
+    **Question**: This is a new limit. Verify it's ok
+    
+    Max length: 1024
+    
+1. **duration** : string
 
-Max length: 8192
+    Duration in TimeSpan 'G' (general long) format: d:hh:mm:ss.fffffff
+    
+1. **result** : test.TestResult
 
-This field is optional.
+    [TestResult] "Instances of AvailabilityData represent the result of executing an availability test"
+        - Pass = 0
+        - Fail = 1
+        
+1. **runLocation** : string
 
-## dataSize: double
-This field is optional.
+    **Question**: This is a new limit. Verify it's ok
+    
+    Max length: 1024
+    
+    This field is optional.
+    
+1. **message** : string
 
-## properties: IDictionary[string, string]
-Collection of custom properties.
+    **Question**: This is a new limit. Verify it's ok
+    
+    Max length: 8192
+    
+    This field is optional.
+    
+1. **dataSize** : double
 
-Max key length: 150
+    This field is optional.
+    
+1. **properties** : IDictionary[string, string]
 
-Max value length: 8192
+    Collection of custom properties.
+    
+    Max key length: 150
+    
+    Max value length: 8192
+    
+    This field is optional.
+    
+1. **measurements** : IDictionary[string, double]
 
-This field is optional.
-
-## measurements: IDictionary[string, double]
-Collection of custom measurements.
-
-Max key length: 150
-
-This field is optional.
-
+    Collection of custom measurements.
+    
+    Max key length: 150
+    
+    This field is optional.
+    
