@@ -29,6 +29,7 @@ Instance of the Metric item is a list of measurements (single data points) and/o
         This field is optional.
         
         [DataPointType] "Type of the metric data measurement."
+        
             - Measurement = 0
             - Aggregation = 1
             

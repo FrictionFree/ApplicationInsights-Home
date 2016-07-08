@@ -21,6 +21,7 @@ Instances of Message represent printf-like trace statements that are text-search
     This field is optional.
     
     [SeverityLevel] "Defines the level of severity for the event."
+    
         - Verbose = 0
         - Information = 1
         - Warning = 2

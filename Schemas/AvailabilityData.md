@@ -27,6 +27,7 @@
 1. **result** : test.TestResult
 
     [TestResult] "Instances of AvailabilityData represent the result of executing an availability test"
+    
         - Pass = 0
         - Fail = 1
         

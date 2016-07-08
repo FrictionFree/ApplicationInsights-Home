@@ -111,6 +111,7 @@ Instance of Exception represents handled or unhandled exception that occurred du
     This field is optional.
     
     [SeverityLevel] "Defines the level of severity for the event."
+    
         - Verbose = 0
         - Information = 1
         - Warning = 2
