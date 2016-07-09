@@ -38,8 +38,6 @@ Instance of PageView represents a generic action on a page like a button click. 
 
     Request url with all query string parameters
     
-    **Question**: can we increase it to at least 8192?
-    
     Max length: 2048
     
     This field is optional.

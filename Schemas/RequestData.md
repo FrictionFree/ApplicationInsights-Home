@@ -12,9 +12,7 @@ Instance of Request represents completion of an external request to the applicat
 
     Identifier of a request call instance. Used for correlation between request and other telemetry items.
     
-    **Question**: can we decrease limit to 64?
-    
-    Max length: 1024
+    Max length: 128
     
 1. **duration** : string
 
@@ -23,8 +21,6 @@ Instance of Request represents completion of an external request to the applicat
 1. **responseCode** : string
 
     Result of a request execution. Http status code for http requests.
-    
-    **Question**: It is not sanitized in .NET SDK today. Make it be.
     
     Max length: 1024
     
@@ -51,8 +47,6 @@ Instance of Request represents completion of an external request to the applicat
 1. **url** : string
 
     Request url with all query string parameters
-    
-    **Question**: can we increase it to at least 8192?
     
     Max length: 2048
     

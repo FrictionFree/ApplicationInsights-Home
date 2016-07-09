@@ -4,8 +4,6 @@
 
     Application version. Information in the application context fields is always about the application that is sending the telemetry.
     
-    **Question**: This is a new limit. Verify it's ok
-    
     Max length: 1024
     
     Default value: "ai.application.ver"
@@ -16,8 +14,6 @@
 
     Unique device id. Computer name in most cases.
     
-    **Question**: This is a new limit. Verify it's ok
-    
     Max length: 1024
     
     Default value: "ai.device.id"
@@ -26,11 +22,9 @@
     
 1. **"ai.device.locale"** : string
 
-    Device locale using <language>-<REGION> pattern, following RFC 5646. Example 'en-US'
+    Device locale using <language>-<REGION> pattern, following RFC 5646. Example 'en-US'.
     
-    **Question**: This is a new limit. Verify it's ok
-    
-    Max length: 16
+    Max length: 64
     
     Default value: "ai.device.locale"
     
@@ -40,8 +34,6 @@
 
     Model of the device end user of the application using. Used for client scenarios. If empty, derived from user agent.
     
-    **Question**: This is a new limit. Verify it's ok
-    
     Max length: 256
     
     Default value: "ai.device.model"
@@ -50,23 +42,19 @@
     
 1. **"ai.device.oemName"** : string
 
-    **Question**: This is a new limit. Verify it's ok
-    
     Max length: 256
     
     Default value: "ai.device.oemName"
     
     This field is optional.
     
-1. **"ai.device.os"** : string
+1. **"ai.device.osVersion"** : string
 
     Operation system name and version of the device end user of the application using. If empty derived from user agent. Example 'Windows 10 Pro 10.0.10586.0'
     
-    **Question**: This is a new limit. Verify it's ok
-    
     Max length: 256
     
-    Default value: "ai.device.os"
+    Default value: "ai.device.osVersion"
     
     This field is optional.
     
@@ -76,7 +64,7 @@
     
     **Question**: This is a new limit. Verify it's ok
     
-    Max length: 16
+    Max length: 64
     
     Default value: "ai.device.type"
     
@@ -96,7 +84,7 @@
 
     A unique identifier for the operation instance. The operation.id is created by either a request or a page view. All other telemetry sets this to the value for the containing request or page view. Operation.id is used for finding all the telemetry items for a specific operation instance.
     
-    Max length: 64
+    Max length: 128
     
     Default value: "ai.operation.id"
     
@@ -116,7 +104,7 @@
 
     The unique identifier of the telemetry item's immediate parent.
     
-    Max length: 64
+    Max length: 128
     
     Default value: "ai.operation.parentId"
     
@@ -125,8 +113,6 @@
 1. **"ai.operation.syntheticSource"** : string
 
     Name of synthetic source. Some telemetry from the application may represent a synthetic traffic. It may be web crawler indexing the web site, site availability tests or traces from diagnostic libraries like Application Insights SDK itself.
-    
-    **Question**: This is a new limit. Verify it's ok
     
     Max length: 1024
     
@@ -160,8 +146,6 @@
 
     In multi-tenant applications account ID or name that user is acting with. Examples may be subscription ID for Azure portal or blog name blogging platform.
     
-    **Question**: This is a new limit. Verify it's ok
-    
     Max length: 1024
     
     Default value: "ai.user.accountId"
@@ -172,7 +156,7 @@
 
     Anonymous user id. Represents the end user of the application. When telemetry is sent from a service, the user context is about the user than initiated the operation in the service.
     
-    Max length: 64
+    Max length: 128
     
     Default value: "ai.user.id"
     
@@ -181,8 +165,6 @@
 1. **"ai.user.authUserId"** : string
 
     Authenticated user id. As opposite to ai.user.id represents the user with by the friendly name. Since it's PII information it is not collected by default by most SDKs.
-    
-    **Question**: This is a new limit. Verify it's ok
     
     Max length: 1024
     
@@ -194,8 +176,6 @@
 
     Name of the role application is part of. Maps directly to the role name in azure.
     
-    **Question**: This is a new limit. Verify it's ok
-    
     Max length: 1024
     
     Default value: "ai.cloud.role"
@@ -205,8 +185,6 @@
 1. **"ai.cloud.roleInstance"** : string
 
     Name of the instance where application is running. Computer name for on-premisis, instance name for Azure.
-    
-    **Question**: This is a new limit. Verify it's ok
     
     Max length: 1024
     
@@ -218,8 +196,6 @@
 
     SDK version. See https://github.com/Microsoft/ApplicationInsights-Home/blob/master/SDK-AUTHORING.md#sdk-version-specification for information.
     
-    **Question**: This is a new limit. Verify it's ok
-    
     Max length: 64
     
     Default value: "ai.internal.sdkVersion"
@@ -229,8 +205,6 @@
 1. **"ai.internal.agentVersion"** : string
 
     Agent version. Used to indicate the version of StatusMonitor installed on the computer if it is used for data collection.
-    
-    **Question**: This is a new limit. Verify it's ok
     
     Max length: 64
     

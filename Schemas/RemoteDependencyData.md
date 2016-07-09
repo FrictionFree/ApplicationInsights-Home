@@ -18,9 +18,7 @@ Instance of Remote Dependency represents an interaction of the monitored compone
 
     Identifier of a dependency call instance. Used for correlation with the request telemetry item corresponding to this dependency call.
     
-    **Question**: can we decrease limit to 64?
-    
-    Max length: 1024
+    Max length: 128
     
     This field is optional.
     
@@ -28,9 +26,7 @@ Instance of Remote Dependency represents an interaction of the monitored compone
 
     Result code of a dependency call. Examples are SQL error code, http status code.
     
-    **Question**: can we decrease limit to 1024?
-    
-    Max length: 8192
+    Max length: 1024
     
     This field is optional.
     
@@ -52,9 +48,7 @@ Instance of Remote Dependency represents an interaction of the monitored compone
 
     Command initiated by this dependency call. Examples are SQL statement, http url with all query parameters.
     
-    **Question**: can we increase it to at least 8192?
-    
-    Max length: 2048
+    Max length: 8192
     
     This field is optional.
     

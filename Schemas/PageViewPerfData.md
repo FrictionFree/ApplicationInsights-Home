@@ -38,8 +38,6 @@ Instance of PageView represents: page view with no performance data, page view w
 
     Request url with all query string parameters
     
-    **Question**: can we increase it to at least 8192?
-    
     Max length: 2048
     
     This field is optional.
@@ -53,8 +51,6 @@ Instance of PageView represents: page view with no performance data, page view w
 1. **referrer** : string
 
     Referrer url. Never used so far.
-    
-    **Question**: Should we deprecated it or make official?
     
     Max length: 1024
     

@@ -12,9 +12,7 @@ Instance of Exception represents handled or unhandled exception that occurred du
 
     Indication of where exception was caught to assess it's severity. Possible values are 'user code' (UserCode), 'framework' (Platform) or 'unhandled' (Unhandled)
     
-    **Question**: Should we deprecate it?
-    
-    Max length: 9
+    Max length: 1024
     
 1. **exceptions** : IList[ExceptionDetails]
 
@@ -122,17 +120,7 @@ Instance of Exception represents handled or unhandled exception that occurred du
 
     Identifier of where the exception was thrown in code. Used for exceptions grouping. Typically a combination of exception type and a function from the call stack.
     
-    **Question**: This is a new limit. It is aligned with other names. Verify it's ok
-    
     Max length: 1024
-    
-    This field is optional.
-    
-1. **crashThreadId** : int
-
-    The crashing thread id for Windows Store apps.
-    
-    **Question**: Is it used by any of SDKs? Should it be deprecated?
     
     This field is optional.
     
