@@ -12,7 +12,7 @@
     
 1. **"ai.device.id"** : string
 
-    Unique device id. Computer name in most cases.
+    Unique client device id. Computer name in most cases.
     
     Max length: 1024
     
@@ -61,8 +61,6 @@
 1. **"ai.device.type"** : string
 
     Type of the device end user of the application is using. Used primarily to distinguish JavaScript telemetry from server side telemetry. Examples: 'PC', 'Phone', 'Browser'. 'PC' is a default value.
-    
-    **Question**: This is a new limit. Verify it's ok
     
     Max length: 64
     
@@ -149,6 +147,16 @@
     Max length: 1024
     
     Default value: "ai.user.accountId"
+    
+    This field is optional.
+    
+1. **"ai.user.userAgent"** : string
+
+    The browser's user agent string as reported by the browser. This property will be used to extract informaiton regarding customer browser, but will not be stored. Use custom properties to store the original user agent.
+    
+    Max length: 2048
+    
+    Default value: "ai.user.userAgent"
     
     This field is optional.
     

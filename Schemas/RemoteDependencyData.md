@@ -30,11 +30,9 @@ Instance of Remote Dependency represents an interaction of the monitored compone
     
     This field is optional.
     
-1. **value** : double
+1. **duration** : string
 
-    Duration of a call in milliseconds.
-    
-    **Question**: Should we change it to timespan as everything else?
+    Request duration in TimeSpan 'G' (general long) format: d:hh:mm:ss.fffffff.
     
 1. **success** : bool
 
@@ -44,7 +42,7 @@ Instance of Remote Dependency represents an interaction of the monitored compone
     
     This field is optional.
     
-1. **commandName** : string
+1. **data** : string
 
     Command initiated by this dependency call. Examples are SQL statement, http url with all query parameters.
     

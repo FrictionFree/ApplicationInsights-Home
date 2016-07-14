@@ -1,9 +1,11 @@
 
 #Microsoft.Telemetry.Envelope
-System variables for a telemetry item (Part A)
+System variables for a telemetry item.
 
 1. **ver** : int
 
+    Envelope version. For internal use only. By assigning this the default, it will not be serialized within the payload unless changed to a value other than #1.
+    
     Default value: 1
     
     This field is optional.
@@ -25,8 +27,6 @@ System variables for a telemetry item (Part A)
 1. **sampleRate** : double
 
     Sampling rate used in application. This telemetry item represents 1 / sampleRate actual telemetry item.
-    
-    **Question**: Do we use this sampleRate or one in ContextTagKeys collection?
     
     Default value: 100.0
     
